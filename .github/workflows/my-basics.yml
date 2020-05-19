@@ -44,8 +44,8 @@ jobs:
     - name: List current folder
       run: ls -la
     
-    - name: Git clone my repo
-      uses: action/checkout@v1
+#    - name: Git clone my repo
+#      uses: action/checkout@v1
     
     - name: List current folder
       run: ls -la
