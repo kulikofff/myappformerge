@@ -35,6 +35,7 @@ jobs:
   my_testing_1:      
     # From ADV
     runs-on: ubuntu-latest
+    needs: [my_testing]
     steps:
       - name: Print_hello
         run: echo "Hello world from my_testing_1"
