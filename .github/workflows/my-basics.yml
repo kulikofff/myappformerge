@@ -81,9 +81,7 @@ jobs:
   my_deploy_windows:      
     # From ADV 
     runs-on: windows-latest
-    needs: |
-     [my_testing]
-     [my_deploy] 
+    needs: [my_deploy] 
     steps:
     - name: Windows
       run: dir
