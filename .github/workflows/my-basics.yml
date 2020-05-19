@@ -50,5 +50,5 @@ jobs:
         run: echo "Hello world from my_testing_1"
     
       - name: Deployyment package
-        run : echo "Deploy name: ${{ env.APPLICATION_NAME }}" 
+        run : echo "Deploy name is ${{ env.APPLICATION_NAME }}" 
         
