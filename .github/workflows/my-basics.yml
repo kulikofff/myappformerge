@@ -77,3 +77,14 @@ jobs:
       - name: Deployyment package
         run : echo "Deploy name is ${{ env.APPLICATION_NAME }}" 
         
+
+  my_deploy_windows:      
+    # From ADV
+      
+    runs-on:windows-latest       
+     needs: |
+      [my_testing]
+      [my_deploy]
+     run: |
+       dir
+       ping 8.8.8.8 
