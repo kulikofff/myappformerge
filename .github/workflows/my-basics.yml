@@ -69,7 +69,7 @@ jobs:
           echo "Hello world from my_testing_1"
           echo " Var1 = ${{ env.VAR1 }}"
           echo " Var1 = ${{ env.VAR2 }}"
-          echo "Var3 = $LOCAL_VAR"
+          echo " Var3 = $LOCAL_VAR"
         env:
            LOCAL_VAR: "Superlocal"
            
