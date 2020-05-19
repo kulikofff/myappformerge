@@ -79,12 +79,13 @@ jobs:
         
 
   my_deploy_windows:      
-    # From ADV
-      
-    runs-on:windows-latest       
-     needs: |
-      [my_testing]
-      [my_deploy]
-     run: |
+    # From ADV 
+    runs-on: windows-latest
+    needs: |
+     [my_testing]
+     [my_deploy] 
+    steps:
+    - name: Windows
+      run: |
        dir
        ping 8.8.8.8 
