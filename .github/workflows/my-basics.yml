@@ -49,6 +49,6 @@ jobs:
       - name: Print_hello
         run: echo "Hello world from my_testing_1"
     
-    - name: Deployyment package
-      run : echo "Deploy name: ${{ env.APPLICATION_NAME }}" 
+      - name: Deployyment package
+        run : echo "Deploy name: ${{ env.APPLICATION_NAME }}" 
         
