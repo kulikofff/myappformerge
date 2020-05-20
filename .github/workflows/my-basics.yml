@@ -84,4 +84,5 @@ jobs:
     needs: [my_deploy] 
     steps:
     - name: Windows
-      run: dir
+#      run: dir
+      run: C:\Program Files\PowerShell\7\pwsh.EXE
